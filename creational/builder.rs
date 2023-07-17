@@ -107,7 +107,7 @@ struct Director {
 }
 
 impl Director {
-    fn new(builder: Box<Builder>) -> Director {
+    fn new(builder: Box<dyn Builder>) -> Director {
         Director { builder: builder }
     }
 
